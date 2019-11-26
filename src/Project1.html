@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Choigyuwon site</title>
+    <style>
+        h1 {font-style : italic; font-size : x-large;}
+        body {text-align: center; background-image: url("a.jpg"); background-repeat : no-repeat;background-size: contain}
+        p {font-style : italic;}
+        #login-form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f2f2e1;
+
+        }
+
+        #login-form h1 {
+            margin: 0 0 10px 0;
+        }
+        #login-form input{
+            box-sizing: border-box;
+            width: 100%;
+            margin: 10px;
+            padding : 10px;
+        }
+        #login-form input[type=submit]{
+            border:1px solid brown;
+            border-radius: 6px;
+            background: burlywood;
+        }
+    </style>
+</head>
+<body>
+<h1><span style = "background-color : azure ">choigyuwon site home</span></h1>
+<form id="login-form" onsubmit="return login()">
+    <h2>LOGIN</h2>
+    <input type="email" placeholder="Email Address" id="user-email" required>
+    <input type="password" placeholder="Password" id="user-pass">
+    <input type="submit" value="Login">
+</form>
+<p>문의 gw2988@naver.com or 강릉원주대학교 컴퓨터공학과</p>
+<script type = text/javascript src = Project1.js>
+</script>
+</body>
+</html>
+
