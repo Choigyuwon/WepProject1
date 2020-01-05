@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -8,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Choigyuwon site</title>
     <style>
-        h1 {font-family : Aladin; font-size : x-large; color : snow;}
+        h1 {font-style : italic; font-size : x-large; color : snow;}
         html {text-align: center; background-image: url("login.PNG"); background-repeat : no-repeat;background-size: contain
             min-height: 100%;  background-position: center;
             background-size: cover;}
@@ -38,18 +37,16 @@
 <body>
 
 
-<h1><span style="font-size: 40px">choigyuwon site home</span></h1>
-<form id="login-form" onsubmit="return login()" action = "8-2.php">
+<h1><span style = "background-color : #000000 ">choigyuwon site home</span></h1>
+<form id="login-form" onsubmit="return login()" action = "1.php">
     <h2><span style = color:white>LOGIN</span></h2>
 
-    <input type="email" placeholder="Email Address" id="user-email" name ="email">
-    <input type="password" placeholder="Password" id="user-pass" name = "password">
+    <input type="email" placeholder="Email Address" id="user-email" required>
+    <input type="password" placeholder="Password" id="user-pass">
     <input type="submit" value="Login">
-    <input type="submit" value="Signup">
 </form>
-<p><span style=color:white>gw2988@naver.com or Gangneung-Wonju National University</span></p>
+<p><span style=color:white>문의 gw2988@naver.com or 강릉원주대학교 컴퓨터공학과</span></p>
 <script>
-
     function login(){
         //FormData 객체 생성하고 키-값 형식으로 추가해 줌
         var data = new FormData();
@@ -65,7 +62,7 @@
                 if(response.status){
                     console.log("로그인 되었습니다.");
                     //로그인 후 이동 페이지
-                    location.href = "82.html";
+                    location.href = "example05.html";
                 } else {
                     console.log("일치하는 회원정보가 없습니다.");
                     alert("회원정보가 없습니다.");
