@@ -20,7 +20,6 @@
         #myVisual section p{float:left;width:100%;text-align:center;color:#fff}
         #myVisual ul{float:right; padding-right: 200px; font-size:15px; font-family:"KoPub돋움체 Medium";}
         #myVisual span{font-family: "휴먼매직체"}
-        #myVisual p{text-align: center; font-size : 15px;}
         #webIntro{clear:both;float:left;width:100%;background: #373b41;padding:50px 0 50px 0}
         .webIntroCenter{width:90%;margin:0 auto}
         .blah{float:left;width:23%;height:50px;border:1px solid #fff;border-radius:10px}
@@ -48,18 +47,41 @@
         }
     </style>
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script>
-        $(document).ready(function() {
-        $("#slider").click({
-            mode:'slide',
-            loop:true,
-            auto:true,
-            keyPress:true,
-            pager:false,
-            speed:1500,
-            pause:3000
+        $(document).ready(function(){
+            $('#myVisual').bxSlider();
         });
-    });
+    </script>
+    <script>
+        $(document).ready(function(){
+
+            var main = $('#myVisual').bxSlider({
+
+                mode: 'fade',
+
+                auto: true,	//자동으로 슬라이드
+
+                controls : true,	//좌우 화살표
+
+                autoControls: true,	//stop,play
+
+                pager:true,	//페이징
+
+                pause: 3000,
+
+                autoDelay: 0,
+
+                slideWidth: 800, //이미지 박스 크기설정
+
+                speed: 500,
+
+                stopAutoOnclick:true
+
+            });
+        });
     </script>
 
 </head>
@@ -79,7 +101,7 @@
 <div id = "content">
     <div id = "myVisual">
         <nav>
-        <table id="slider">
+        <table>
             <tr>
                 <td>
                     <img src="people.jpg" alt="people" width="250px" height="350px">
@@ -99,11 +121,16 @@
                 <td>
                     <img src="couple4.jpg" alt="couple4" width="250px" height="350px">
                 </td>
+                <td>
+                    <img src="couple5.jpg" alt="couple4" width="250px" height="350px">
+                </td>
+                <td>
+                    <img src="couple6.jpg" alt="couple4" width="250px" height="350px">
+                </td>
 
             </tr>
         </table>
         </nav>
-        <p>-1 2 3 4-</p>
     </div>
     <div id="webIntro">
         <div class = "webIntroCenter">
